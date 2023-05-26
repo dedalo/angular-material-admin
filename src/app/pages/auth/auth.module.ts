@@ -8,7 +8,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AuthPageComponent } from './containers';
 import { AuthRoutingModule } from './auth-routing.module';
 import { YearPipe } from './pipes';
-import { AuthService, EmailService } from './services';
+import { AuthService } from './services';
 import { LoginFormComponent, SignFormComponent } from './components';
 import { AuthGuard } from './guards';
 
@@ -30,7 +30,6 @@ import { AuthGuard } from './guards';
   ],
   providers: [
     AuthService,
-    EmailService,
     AuthGuard
   ]
 })
